@@ -5,6 +5,7 @@ import Input from "../../components/Input/Input";
 import Filter from "../../components/Filtered/Filter";
 import useCountries from "../../hooks/useCountries";
 import CountriesSection from "../../components/CountriesSection/CountriesSection";
+import Footer from '../../components/footer/Footer'
 
 function Home() {
   const [countrie, setCountrie] = useState("");
@@ -27,6 +28,7 @@ function Home() {
       <main>
         <CountriesSection countries={countries} />
       </main>
+      <Footer/>
     </div>
   );
 }

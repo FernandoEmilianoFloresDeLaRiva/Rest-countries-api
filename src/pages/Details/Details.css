@@ -1,0 +1,22 @@
+.home{
+    background-color: hsl(0, 0%, 98%);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    max-width: 100vw;
+}
+
+.navBack{
+    max-width: 100vw;
+    max-height: 3vh;
+    display: flex;
+    align-items:center;
+    justify-content:flex-start;
+}
+
+.mainDetails{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100vw;
+    height: auto;
+}

@@ -1,0 +1,34 @@
+.formInput {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  min-width: 30vw;
+  height: 2em;
+  background-color: hsl(0, 0%, 100%);
+  box-shadow: 0 0 0.3em hsl(0, 0%, 52%);
+  border-radius: 0.3em;
+  padding: 1em;
+}
+
+.magnifyingButton {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  color: hsl(0, 0%, 100%);
+}
+
+.inputIndex {
+  width: 91%;
+  border: none;
+}
+
+.imgButton {
+  width: 1em;
+  color: hsl(0, 0%, 52%);
+}
+
+@media (max-width: 376px) {
+  .inputIndex {
+    width: 83%;
+  }
+}

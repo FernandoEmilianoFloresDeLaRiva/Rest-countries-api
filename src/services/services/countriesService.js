@@ -1,8 +1,8 @@
-import { getApi, getOneApi, getByRegion } from "../api/countriesApi-";
+import { getApi, getParticularApi } from "../api/countriesApi-";
 
 export const getCountries = async () => {
   try {
-    const res = await getApi();
+    const res = await getApi("all");
     return res;
   } catch (err) {
     console.error("Error in fetching: ", err);
@@ -12,7 +12,7 @@ export const getCountries = async () => {
 
 export const getOneCountrie = async (name) => {
   try {
-    const res = await getOneApi(name);
+    const res = await getApi(`name/${name}`);
     return res;
   } catch (err) {
     console.error("Error in fetching", err);
@@ -22,7 +22,17 @@ export const getOneCountrie = async (name) => {
 
 export const getCountriesByRegion = async (name) => {
   try {
-    const res = await getByRegion(name);
+    const res = await getApi(`region/${name}`);
+    return res;
+  } catch (err) {
+    console.error("Error in fetching", err);
+    throw err;
+  }
+};
+
+export const getDetailsCountry = async (name) => {
+  try {
+    const res = await getParticularApi(name);
     return res;
   } catch (err) {
     console.error("Error in fetching", err);

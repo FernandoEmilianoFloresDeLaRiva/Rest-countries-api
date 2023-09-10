@@ -8,7 +8,7 @@ function IndexRouter() {
     <BrowserRouter>
       <Routes>
         <Route exact path="/" Component={Home} />
-        <Route exact path="/details/:name" Component={Details}/>
+        <Route exact path="/details" Component={Details} />
       </Routes>
     </BrowserRouter>
   );

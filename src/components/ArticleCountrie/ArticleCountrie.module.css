@@ -1,5 +1,5 @@
 article {
-  min-width: 20vw;
+  width: 20vw;
   background-color: hsl(0, 0%, 100%);
   box-shadow: 0 0 0.2em hsl(0, 0%, 52%);
   border-radius: 0.3em;
@@ -35,4 +35,10 @@ article button figure figcaption {
 article div {
   line-height: 0.6em;
   padding-left: 1em;
+}
+
+@media (max-width : 376px) {
+  article{
+    width: 80vw;
+  }
 }

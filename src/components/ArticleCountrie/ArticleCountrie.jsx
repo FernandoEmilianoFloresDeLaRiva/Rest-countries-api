@@ -1,10 +1,15 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import "./ArticleCountrie.module.css";
 
 function ArticleCountrie({ countrie }) {
+  const changePage = useNavigate();
+  const changeToDetais = () => {
+    changePage(`/details/?name=${countrie.name.common}`);
+  };
   return (
     <article>
-      <button>
+      <button onClick={changeToDetais}>
         <figure>
           <img src={countrie.flags.svg} alt={countrie.flags.alt} />
           <figcaption>{countrie.name.common}</figcaption>

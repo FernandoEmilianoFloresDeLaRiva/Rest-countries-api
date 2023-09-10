@@ -1,0 +1,21 @@
+.buttonBack{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 10vw;
+    height: 3em;
+    background-color: hsl(0, 0%, 100%);
+    border-color: hsl(0, 0%, 52%, 0.3);
+    border-radius: 0.3em;
+    cursor: pointer;
+}
+
+.imgBack{
+    width: 2em;
+    
+}
+
+nav button p{
+    margin-left: 0.5em;
+    font-size: 1.2em;
+}

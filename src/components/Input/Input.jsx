@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./Input.module.css";
+import "./Input.css";
 import magnifying from "../../assets/magnifying.svg";
 
 function Input({ changeInput }) {
@@ -15,14 +15,15 @@ function Input({ changeInput }) {
     }
   };
   return (
-    <form onSubmit={submitData}>
-      <button>
-        <img src={magnifying} alt="magnifying-glass" />.
+    <form onSubmit={submitData}className="formInput">
+      <button className="magnifyingButton">
+        <img src={magnifying} alt="magnifying-glass" className="imgButton"/>.
       </button>
       <input
         placeholder="Search for a country..."
         onChange={changeCountry}
         value={country}
+        className="inputIndex"
       />
     </form>
   );

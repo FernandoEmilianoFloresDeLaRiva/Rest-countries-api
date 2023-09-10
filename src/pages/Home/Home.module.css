@@ -1,5 +1,4 @@
 .home{
-    background-color: hsl(0, 0%, 98%);
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -14,4 +13,10 @@ div nav{
     align-items: center;
     max-width: 100vw;
     padding: 3%;
+}
+
+@media (max-width : 376px) {
+    div nav{
+        justify-content: center;
+    }
 }

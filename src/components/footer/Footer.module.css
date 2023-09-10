@@ -1,8 +1,9 @@
 footer {
-  position: absolute;
-  bottom: 2vh;
-  text-align: center;
-  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  height: 10vh;
   font-size: 11px;
 }
 
